@@ -1,18 +1,21 @@
-export class GiphyAPI {
-  #API_KEY = 'HVO3YlR6dk6WsMvmOioBIpvhu5LrXxvq';
-  #BASE_URL = 'https://api.giphy.com/v1/gifs/search?';
+export class TenorAPI {
+  #API_KEY = 'AIzaSyD_XWaKzzYCXeeezTgqF5OlQi5nDtvAItA';
+  #BASE_URL = 'https://tenor.googleapis.com/v2/search?';
 
   constructor() {
-    this.offset = 0;
+    this.limit = 24;
     this.query = null;
+    this.next = null;
+    this.pos = null;
   }
 
   async fetchGifs() {
     const serchParams = new URLSearchParams({
       key: this.#API_KEY,
       q: this.query,
-      offset: this.offset,
-      limit: 50,
+      limit: this.limit,
+      next: this.next,
+      pos: this.pos,
     });
 
     try {
