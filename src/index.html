@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>GIFS FINDER</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h1 class="title">GIFS FINDER</h1>
+      <form>
+        <label for="search">Search</label>
+        <input id="search" type="search" pattern=".*\S.*" required />
+        <span class="caret"></span>
+      </form>
+    </section>
+    <section>
+      <div class="gallery" id="gallery">
+        <!-- <div class="gallery-item">
+          <div class="content">
+            <img
+              src="https://media3.giphy.com/media/HGe4zsOVo7Jvy/giphy.gif?cid=2685e9b3sxs8y5jx25x2k4ikxgmti062gv0ibiizhuxh4d10&rid=giphy.gif&ct=g"
+              alt=""
+            />
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/galleryslider.js"></script>
+  </body>
 </html>
