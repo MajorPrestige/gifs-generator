@@ -213,5 +213,22 @@ label {
 .load-more {
   display: block;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 50px;
+  background-color: #aed6f1;
+  color: #2471a3;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all calc(var(--dur) * 0.5) linear;
+}
+
+.disabled {
+  display: none;
+}
+
+.load-more:hover {
+  background-color: #2471a3;
+  color: #aed6f1;
 }
