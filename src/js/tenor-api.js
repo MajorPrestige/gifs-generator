@@ -1,3 +1,5 @@
+'use strict';
+
 export class TenorAPI {
   #API_KEY = 'AIzaSyD_XWaKzzYCXeeezTgqF5OlQi5nDtvAItA';
   #BASE_URL = 'https://tenor.googleapis.com/v2/search?';

@@ -17,12 +17,12 @@ export class GiphyAPI {
 
     try {
       const response = await fetch(`${this.#BASE_URL}${serchParams}`);
-      const gifs = await response.json();
 
       if (!response.ok) {
         throw new Error(response.staus);
       }
 
+      const gifs = await response.json();
       return gifs;
     } catch (err) {
       console.log(err);
